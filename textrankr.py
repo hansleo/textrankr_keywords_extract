@@ -173,10 +173,7 @@ class TextRank:
             if used.intersection(set(k)): continue
             both[k] = tuples[k]
             for w in k: used.add(w)
- 
-        #for k in cand:
-        #    if k not in used or True: both[k] = ranks[k] * self.getI(k)
- 
+  
         return both
  
     def summarize(self, ratio = 0.333):
